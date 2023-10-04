@@ -97,7 +97,7 @@ void generateNext(){
 }
 
 void playSequence(){
-  delay(300);
+  delay(150);
   for(int i = 0; i < sequenceCurLen; i++){
     digitalWrite(leds[sequence[i]], HIGH);
     delay(delayLed);
@@ -178,7 +178,7 @@ void nextGame(){
     digitalWrite(leds[3], LOW);
     sequenceCurLen = 0;
     sequenceCurInput = 0;
-    delay(3000);
+    delay(2000);
     state = 0;
   }
 }
